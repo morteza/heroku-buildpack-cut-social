@@ -14,6 +14,6 @@ EOF
 if [ ! -f $BUILD_DIR/Procfile ]; then
 cat <<EOF
 default_process_types:
-  web:    play start --http.port=\$PORT --db=\$DATABASE_URL
+  web:    play start --http.port=\$PORT
 EOF
 fi
