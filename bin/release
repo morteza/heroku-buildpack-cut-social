@@ -7,7 +7,7 @@ cat <<EOF
 ---
 config_vars:
   JAVA_OPTS: -Xmx384m -Xss512k -XX:+UseCompressedOops
-  PLAY_OPTS: --%openshift deps --forProd --clearcache
+  PLAY_OPTS: --%openshift --forProd --clearcache
 addons:
   heroku-postgresql
 EOF
